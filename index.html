@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ember & Oak | New American Dining</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Ember & Oak</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservations">Reservations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Modern American Cuisine</h1>
+            <p>Where tradition meets innovation</p>
+            <a href="#reservations" class="btn">Reserve a Table</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Our Story</h2>
+            <div class="about-content">
+                <p>At Ember & Oak, we believe in honoring the roots of American cuisine while pushing its boundaries. Our kitchen sources the finest local ingredients, transforming them into dishes that surprise and delight.</p>
+                <p>Every plate tells a story of craftsmanship, creativity, and a deep respect for the land that feeds us.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>The Menu</h2>
+            <div class="menu-grid">
+                <div class="menu-category">
+                    <h3>Starters</h3>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name">Charred Octopus</span>
+                            <span class="item-price">$24</span>
+                        </div>
+                        <p class="item-desc">Crispy potatoes, chorizo vinaigrette, smoked paprika</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name">Burrata</span>
+                            <span class="item-price">$18</span>
+                        </div>
+                        <p class="item-desc">Heirloom tomatoes, aged balsamic, basil oil</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name">Beef Tartare</span>
+                            <span class="item-price">$22</span>
+                        </div>
+                        <p class="item-desc">Quail egg, capers, house-made chips</p>
+                    </div>
+                </div>
+                <div class="menu-category">
+                    <h3>Mains</h3>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name">Dry-Aged Ribeye</span>
+                            <span class="item-price">$58</span>
+                        </div>
+                        <p class="item-desc">Bone marrow butter, roasted shallots, red wine jus</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name">Pan-Seared Salmon</span>
+                            <span class="item-price">$38</span>
+                        </div>
+                        <p class="item-desc">Forbidden rice, miso glaze, pickled vegetables</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name">Duck Breast</span>
+                            <span class="item-price">$44</span>
+                        </div>
+                        <p class="item-desc">Cherry gastrique, wild mushrooms, potato puree</p>
+                    </div>
+                </div>
+                <div class="menu-category">
+                    <h3>Desserts</h3>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name">Dark Chocolate Torte</span>
+                            <span class="item-price">$14</span>
+                        </div>
+                        <p class="item-desc">Salted caramel, vanilla bean ice cream</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name">Seasonal Crumble</span>
+                            <span class="item-price">$12</span>
+                        </div>
+                        <p class="item-desc">Local fruits, oat streusel, crème fraîche</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservations" class="reservations">
+        <div class="container">
+            <h2>Reservations</h2>
+            <p class="section-subtitle">Join us for an unforgettable dining experience</p>
+            <form class="reservation-form">
+                <div class="form-row">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-row">
+                    <input type="date" required>
+                    <input type="time" required>
+                </div>
+                <div class="form-row">
+                    <select required>
+                        <option value="">Number of Guests</option>
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5">5 Guests</option>
+                        <option value="6">6+ Guests</option>
+                    </select>
+                </div>
+                <textarea placeholder="Special requests or dietary requirements"></textarea>
+                <button type="submit" class="btn">Request Reservation</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Visit Us</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-block">
+                        <h4>Location</h4>
+                        <p>168 North Main Street<br>Branford, CT 06405</p>
+                    </div>
+                    <div class="info-block">
+                        <h4>Contact</h4>
+                        <p>Call for Reservation<br>(203) 483-9995</p>
+                    </div>
+                    <div class="info-block">
+                        <h4>Bar/Lounge</h4>
+                        <p>Sunday - Thursday: 11:30 am - 1 am<br>
+                        Friday - Saturday: 10:30 am - 2 am</p>
+                    </div>
+                    <div class="info-block">
+                        <h4>Restaurant Dining</h4>
+                        <p>Monday: 11:30 am - 9 pm<br>
+                        Tuesday: 11:30 am - 9 pm<br>
+                        Wednesday: 11:30 am - 10 pm<br>
+                        Thursday: 11:30 am - 9 pm<br>
+                        Friday: 11:30 am - 10 pm<br>
+                        Saturday: 11:30 am - 11 pm<br>
+                        Sunday: 10:30 am - 9 pm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">Ember & Oak</div>
+                <p>&copy; 2024 Ember & Oak. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
