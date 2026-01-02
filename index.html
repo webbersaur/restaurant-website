@@ -13,13 +13,36 @@
     <header>
         <nav>
             <a href="#" class="logo"><img src="tsf-logo.jpg" alt="Sly Fox Tavern"></a>
-            <ul class="nav-links">
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li class="mobile-only"><a href="tel:+12032342144">Call Now</a></li>
             </ul>
+            <div class="nav-actions">
+                <a href="tel:+12032342144" class="btn btn-call">(203) 234-2144</a>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </nav>
     </header>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
+    </script>
 
     <section class="hero">
         <div class="hero-content">
@@ -312,7 +335,10 @@
         <div class="container">
             <div class="footer-content">
                 <a href="#" class="logo"><img src="tsf-logo.jpg" alt="Sly Fox Tavern"></a>
-                <p>&copy; 2025 Sly Fox Tavern. All rights reserved.</p>
+                <div class="footer-info">
+                    <a href="https://www.facebook.com/profile.php?id=61575826674904" target="_blank" rel="noopener" class="social-link">Follow us on Facebook</a>
+                    <p>&copy; 2025 Sly Fox Tavern. All rights reserved.</p>
+                </div>
             </div>
         </div>
     </footer>
