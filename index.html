@@ -16,7 +16,6 @@
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#menu">Menu</a></li>
-                <li><a href="#reservations">Reservations</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -34,8 +33,13 @@
         <div class="container">
             <h2>Our Story</h2>
             <div class="about-content">
-                <p>At Sly Fox Tavern, we believe in great food, cold drinks, and good company. Our kitchen serves up classic American fare with a twist, using fresh local ingredients to create dishes that keep you coming back.</p>
-                <p>Every plate tells a story of craftsmanship, creativity, and a deep respect for the land that feeds us.</p>
+                <div class="about-image">
+                    <img src="577057350_10225518581189997_1512555206259130455_n.jpg" alt="Sly Fox Tavern interior with fireplace">
+                </div>
+                <div class="about-text">
+                    <p>At Sly Fox Tavern, we believe in great food, cold drinks, and good company. Our kitchen serves up classic American fare with a twist, using fresh local ingredients to create dishes that keep you coming back.</p>
+                    <p>Cozy up by the fireplace, catch the game on one of our TVs, or gather with friends for a night out. We're your neighborhood spot for good times.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -267,40 +271,13 @@
         </div>
     </section>
 
-    <section id="reservations" class="reservations">
-        <div class="container">
-            <h2>Reservations</h2>
-            <p class="section-subtitle">Join us for an unforgettable dining experience</p>
-            <form class="reservation-form">
-                <div class="form-row">
-                    <input type="text" placeholder="Name" required>
-                    <input type="email" placeholder="Email" required>
-                </div>
-                <div class="form-row">
-                    <input type="date" required>
-                    <input type="time" required>
-                </div>
-                <div class="form-row">
-                    <select required>
-                        <option value="">Number of Guests</option>
-                        <option value="1">1 Guest</option>
-                        <option value="2">2 Guests</option>
-                        <option value="3">3 Guests</option>
-                        <option value="4">4 Guests</option>
-                        <option value="5">5 Guests</option>
-                        <option value="6">6+ Guests</option>
-                    </select>
-                </div>
-                <textarea placeholder="Special requests or dietary requirements"></textarea>
-                <button type="submit" class="btn">Request Reservation</button>
-            </form>
-        </div>
-    </section>
-
     <section id="contact" class="contact">
         <div class="container">
             <h2>Visit Us</h2>
             <div class="contact-grid">
+                <div class="contact-image">
+                    <img src="506360286_122117307098860889_8476400760604245049_n.jpg" alt="Sly Fox Tavern sign">
+                </div>
                 <div class="contact-info">
                     <div class="info-block">
                         <h4>Location</h4>
@@ -311,20 +288,21 @@
                         <p>Order Now<br>(203) 234-2144</p>
                     </div>
                     <div class="info-block">
-                        <h4>Bar/Lounge</h4>
-                        <p>Sunday - Thursday: 11:30 am - 1 am<br>
-                        Friday - Saturday: 10:30 am - 2 am</p>
+                        <h4>Hours</h4>
+                        <p>Sunday - Thursday: Open til 1:00 am<br>
+                        Friday - Saturday: Open til 1:45 am</p>
                     </div>
-                    <div class="info-block">
-                        <h4>Restaurant Dining</h4>
-                        <p>Monday: 11:30 am - 9 pm<br>
-                        Tuesday: 11:30 am - 9 pm<br>
-                        Wednesday: 11:30 am - 10 pm<br>
-                        Thursday: 11:30 am - 9 pm<br>
-                        Friday: 11:30 am - 10 pm<br>
-                        Saturday: 11:30 am - 11 pm<br>
-                        Sunday: 10:30 am - 9 pm</p>
-                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.8976!2d-72.8594!3d41.3761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e7d9a8b4c5e7f1%3A0x1234567890abcdef!2s630%20Washington%20Ave%2C%20North%20Haven%2C%20CT%2006473!5e0!3m2!1sen!2sus!4v1234567890"
+                        width="100%"
+                        height="300"
+                        style="border:0; border-radius: 8px;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
             </div>
         </div>
